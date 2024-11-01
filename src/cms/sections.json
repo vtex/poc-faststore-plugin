@@ -1,0 +1,17 @@
+[
+  {
+    "name": "PersonalInfo",
+    "requiredScopes": [],
+    "schema": {
+      "title": "Personal Info",
+      "type": "object",
+      "description": "Section for the Personal Info data",
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        }
+      }
+    }
+  }
+]
