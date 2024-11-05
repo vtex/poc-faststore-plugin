@@ -1,17 +1,26 @@
+import { Button } from "@faststore/ui";
+import { useSession_unstable as useSession } from "@faststore/core/experimental";
+
+
 type PersonalInfoProps = {
-	title?: string;
+  title?: string;
 };
 export default function PersonalInfo(props: PersonalInfoProps) {
-	return (
-		<section>
-			<h2>{props.title || "Title of Personal Info Section"}</h2>
+  const { ...session } = useSession()
 
-			<dl>
-				<dt>Name:</dt>
-				<dd>Placeholder for name</dd>
-				<dt>Address</dt>
-				<dd>Placeholder for address</dd>
-			</dl>
-		</section>
-	);
+  console.log('>> Session', session)
+
+  return (
+    <section className={'personalInfo'}>
+      <h2>{props.title || "Title of Personal Info Section"}</h2>
+
+      <dl>
+        <dt data-fs-poc-title>Name:</dt>
+        <dd>Placeholder for name 2</dd>
+        <dt>Address</dt>
+        <dd>Placeholder for address</dd>
+        <Button variant="primary">Primary</Button>
+      </dl>
+    </section>
+  );
 }

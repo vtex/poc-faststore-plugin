@@ -9,7 +9,10 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@faststore/ui": "^3.0.135",
+    "@faststore/core": "^3.0.135",
+    "@faststore/api": "^3.0.135"
   },
   "devDependencies": {
     "@types/react": "^18.2.12",
