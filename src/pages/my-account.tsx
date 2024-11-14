@@ -1,11 +1,5 @@
 import PersonalInfo from "../components/PersonalInfo/PersonalInfo";
 
-export const config = {
-  path: "/my-account",
-  appLayout: false,
-  name: "MyAccount",
-};
-
 export async function loader() {
   const result = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${Math.ceil(Math.random() * 150)}`,
